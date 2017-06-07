@@ -1,3 +1,4 @@
+
 void keyPressed() {
   if (key == UP)       up = true;
   if (key == LEFT)     left = true;
@@ -15,7 +16,15 @@ float radiusIncrement = 0.5;
 void detectKeys() {
   println(ballRadius);
   if (left)
-    ballRadius = ballRadius - radiusIncrement;
-  if (right) 
-    ballRadius=ballRadius + radiusIncrement;
+   ballX-=ballRadius;
+   
+  if (right)
+   ballX=ballRadius;
+   
+    if (left)
+   LEFT = 'a';
+   
+  if (right)
+   RIGHT = 'd';
+    
 }
